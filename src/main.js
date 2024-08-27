@@ -1,10 +1,6 @@
-import Reveal from "reveal.js";
-import Markdown from "reveal.js/plugin/markdown/markdown.esm"
+import 'reveal.js/dist/reveal.css'
+import 'reveal.js/dist/theme/moon.css'
+import Reveal from 'reveal.js'
 
-let deck = new Reveal(
-  {
-    plugins : [Markdown]
-  }
-)
-
-deck.initialize();
+const deck = new Reveal()
+deck.initialize({ hash: true, slideNumber: true })
